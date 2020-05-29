@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\THEBORN.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{677DCCFA-139B-496A-AAD9-DDD4B849596F}</UniqueIdentifier>
+      <UniqueIdentifier>{0DC18BE8-FC85-44C8-856E-7A0B2AED7103}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\THEBORN.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{79A292AB-5AAB-43F9-A8EE-8E0F3A8D5B82}</UniqueIdentifier>
+      <UniqueIdentifier>{E2405943-96C1-49C3-9E4E-F85C2EDFFB73}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\THEBORN">
-      <UniqueIdentifier>{960EB8D1-8570-416A-B352-AEBA9B2AB928}</UniqueIdentifier>
+      <UniqueIdentifier>{1205B308-C565-4A91-BB36-DFF0DD1C3E60}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\THEBORN\THEBORN.Build.cs">
       <Filter>Source\THEBORN</Filter>

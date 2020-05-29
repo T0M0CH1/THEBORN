@@ -1,0 +1,43 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK has no valid SDK
+IOSPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.IOSPlatformSDK using manually installed SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+ProjectFileGenerator.GenerateProjectFiles: Discovering modules, targets and source code for project...
+WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community (Product=Microsoft.VisualStudio.Product.Community, Version=16.1.29020.237, Sort=0)
+WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702 (Version=14.21.27702)
+UnrealBuildTool.Main: ERROR: Windows SDK must be installed in order to build this target.
+UnrealBuildTool.Main: BuildException: Windows SDK must be installed in order to build this target.
+UnrealBuildTool.Main:    場所 UnrealBuildTool.VCEnvironment.Create(WindowsCompiler Compiler, UnrealTargetPlatform Platform, WindowsArchitecture Architecture, String CompilerVersion, String WindowsSdkVersion) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\VCEnvironment.cs:行 507
+UnrealBuildTool.Main:    場所 UnrealBuildTool.WindowsPlatform.ValidateTarget(TargetRules Target) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\UEBuildWindows.cs:行 714
+UnrealBuildTool.Main:    場所 UnrealBuildTool.RulesAssembly.CreateTargetRulesInstance(String TypeName, TargetInfo TargetInfo) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:行 565
+UnrealBuildTool.Main:    場所 UnrealBuildTool.RulesAssembly.CreateTargetRules(String TargetName, UnrealTargetPlatform Platform, UnrealTargetConfiguration Configuration, String Architecture, FileReference ProjectFile, CommandLineArguments Arguments) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:行 625
+UnrealBuildTool.Main:    場所 UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, ProjectFile& EngineProject, ProjectFile& EnterpriseProject, List`1& GameProjects, Dictionary`2& ProgramProjects) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行 2224
+UnrealBuildTool.Main:    場所 UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行 720
+UnrealBuildTool.Main:    場所 UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:行 176
+UnrealBuildTool.Main:    場所 UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) 場所 D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:行 517
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+0.033) <unknown>
+Timeline.Print: [ 0.033](+0.099) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.132](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.132](+0.070) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.133          [ 0.000](+0.036) Initializing InstalledPlatformInfo
+Timeline.Print:   0.170          [ 0.037](+0.000) Querying types
+Timeline.Print:   0.172          [ 0.039](+0.001) MacPlatformFactory
+Timeline.Print:   0.173          [ 0.041](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.174          [ 0.041](+0.012) AndroidPlatformFactory
+Timeline.Print:   0.186          [ 0.054](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.187          [ 0.054](+0.012) IOSPlatformFactory
+Timeline.Print:   0.199          [ 0.066](+0.002) LinuxPlatformFactory
+Timeline.Print:   0.201          [ 0.068](+0.000) LuminPlatformFactory
+Timeline.Print:   0.201          [ 0.069](+0.001) WindowsPlatformFactory
+Timeline.Print: [ 0.203](+0.360) <unknown>
+Timeline.Print: [ 0.563](+0.001) Finding engine modules
+Timeline.Print: [ 0.565](+0.003) Finding plugin modules
+Timeline.Print: [ 0.569](+0.061) <unknown>
+Timeline.Print: [ 0.630](+0.000) Finding program modules
+Timeline.Print: [ 0.631](+0.000) Finding program targets
+Timeline.Print: [ 0.631](+0.048) <unknown>
+Timeline.Print: [ 0.680](+0.000) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 0.682]
