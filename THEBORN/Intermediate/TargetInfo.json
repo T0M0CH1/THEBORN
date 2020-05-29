@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "THEBORN",
+			"Path": "C:\\THEBORN\\THEBORN\\Source\\THEBORN.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "THEBORNEditor",
+			"Path": "C:\\THEBORN\\THEBORN\\Source\\THEBORNEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
