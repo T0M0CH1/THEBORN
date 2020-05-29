@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Engine.h"
 
 ATHEBORNCharacter::ATHEBORNCharacter()
 {
@@ -53,10 +54,31 @@ void ATHEBORNCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	// set up gameplay key bindings
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	PlayerInputComponent->BindAction("Pickup", IE_Pressed, this, &ATHEBORNCharacter::BeginPickup);
+	PlayerInputComponent->BindAction("Pickup", IE_Released, this, &ATHEBORNCharacter::EndPickup);
+	PlayerInputComponent->BindAction("Show_Inventiry", IE_Pressed, this, &ATHEBORNCharacter::ShowInventory);
+
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATHEBORNCharacter::MoveRight);
 
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &ATHEBORNCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &ATHEBORNCharacter::TouchStopped);
+
+}
+
+void ATHEBORNCharacter::BeginPickup()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("BeginPickup"));
+}
+
+void ATHEBORNCharacter::EndPickup()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("EndPickup"));
+}
+
+void ATHEBORNCharacter::ShowInventory()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("this is our inventory"));
 }
 
 void ATHEBORNCharacter::MoveRight(float Value)

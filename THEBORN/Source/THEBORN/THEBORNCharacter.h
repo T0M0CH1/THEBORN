@@ -34,9 +34,15 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
 
+	void BeginPickup();
+	void EndPickup();
+	void ShowInventory();
+
 
 public:
 	ATHEBORNCharacter();
+
+	bool bIsPickingUp = false;
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
