@@ -57,7 +57,7 @@ void ATHEBORNCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 
 	PlayerInputComponent->BindAction("Pickup", IE_Pressed, this, &ATHEBORNCharacter::BeginPickup);
 	PlayerInputComponent->BindAction("Pickup", IE_Released, this, &ATHEBORNCharacter::EndPickup);
-	PlayerInputComponent->BindAction("Show_Inventiry", IE_Pressed, this, &ATHEBORNCharacter::ShowInventory);
+	//PlayerInputComponent->BindAction("Show_Inventiry", IE_Pressed, this, &ATHEBORNCharacter::ShowInventory);
 
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATHEBORNCharacter::MoveRight);
 
@@ -79,12 +79,14 @@ void ATHEBORNCharacter::EndPickup()
 void ATHEBORNCharacter::ShowInventory()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("this is our inventory"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::SanitizeFloat(test));
 }
 
 void ATHEBORNCharacter::MoveRight(float Value)
 {
 	// add movement in that direction
 	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
+	test = Value;
 }
 
 void ATHEBORNCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)

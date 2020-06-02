@@ -22,7 +22,7 @@ class ATHEBORNCharacter : public ACharacter
 protected:
 
 	/** Called for side to side input */
-	void MoveRight(float Val);
+	void MoveRight(float Value);
 
 	/** Handle touch inputs. */
 	void TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location);
@@ -43,6 +43,9 @@ public:
 	ATHEBORNCharacter();
 
 	bool bIsPickingUp = false;
+	
+	UPROPERTY(BlueprintReadOnly)
+	float test;
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
